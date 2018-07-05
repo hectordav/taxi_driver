@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Proyectos_Ionic\taxi_pedro\demo_taxi_driver\platforms\android\CordovaLib\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Proyectos_Ionic\taxi_pedro\demo_taxi_driver\platforms\android\CordovaLib\src\debug\shaders"/></dataSet></merger>

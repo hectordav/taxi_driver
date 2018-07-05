@@ -1,0 +1,55 @@
+{
+  "_from": "cordova-plugin-nativegeocoder",
+  "_id": "cordova-plugin-nativegeocoder@2.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-L4SpraRIyKxmBx39NW8bBRJ9Ku0=",
+  "_location": "/cordova-plugin-nativegeocoder",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-nativegeocoder",
+    "name": "cordova-plugin-nativegeocoder",
+    "escapedName": "cordova-plugin-nativegeocoder",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-nativegeocoder/-/cordova-plugin-nativegeocoder-2.0.5.tgz",
+  "_shasum": "2f84a9ada448c8ac66071dfd356f1b05127d2aed",
+  "_spec": "cordova-plugin-nativegeocoder",
+  "_where": "C:\\Proyectos_Ionic\\delivery\\delivery_cliente\\delivery",
+  "author": {
+    "name": "Sebastian Baar"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastianbaar/cordova-plugin-nativegeocoder/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-nativegeocoder",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for native forward and reverse geocoding",
+  "homepage": "https://github.com/sebastianbaar/cordova-plugin-nativegeocoder#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-nativegeocoder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianbaar/cordova-plugin-nativegeocoder.git"
+  },
+  "version": "2.0.5"
+}

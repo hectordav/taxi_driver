@@ -1,0 +1,68 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class=" auth-bg">
+  <div class="auth-content">
+
+    <div class="light-bg">
+
+      <!-- Logo -->
+      <div padding text-center>
+        <div class="logo secondary-bg">
+          <ion-icon name="ios-car" color="light" ></ion-icon>
+        </div>
+        <h2 color="dark" >
+          ionic 2 Taxi driver
+        </h2>
+        <p color="dark" >Taxi driver app for ionic 2</p>
+      </div>
+
+      <!-- Login form -->
+
+      <ion-list class="list-form" padding>
+
+        <ion-item>
+          <ion-input type="text" placeholder="Your name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <div padding>
+        <button  ion-button color="secondary"  block (click)="signup()">
+          Create account
+        </button>
+      </div>
+
+    </div>
+
+    <div padding=""></div>
+
+    <!-- Other links -->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <span color="light" >Forgot password?</span>
+        </ion-col>
+        <ion-col>
+          <span color="light" >
+            Have account?
+            <span color="secondary"  (click)="login()">Login</span>
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

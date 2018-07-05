@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary" >
+    <button  ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Carreras Asignadas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="list-full-border">
+    <ion-item *ngFor="let carreras of result">
+      <div (click)="alert_aceptar_carrera(carreras)">
+       <div>
+       	 <ion-icon name="ios-pin" color="primary" item-left></ion-icon>{{carreras.desde}}
+       </div>
+       <div>
+       	 <ion-icon name="ios-locate" color="primary" item-left></ion-icon>{{carreras.hasta}}
+       </div>
+       <div>
+         <ion-icon name="ios-mail" color="primary" item-left></ion-icon>{{carreras.observacion_cliente}}
+       </div>
+       
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

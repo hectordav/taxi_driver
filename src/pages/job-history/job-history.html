@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button  ion-button menuToggle>
+      <ion-icon name="menu" color="amarillo_taxi"></ion-icon>
+    </button>
+    <ion-title><h4 ion-text color="amarillo_taxi">Historial</h4></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class=" primary-bg">
+  <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <span class="label"><h4  ion-text color="light">Historial entre Fechas</h4></span>
+            <ion-item>
+            <ion-label ionic-text color="primary" >Fecha Inicio</ion-label>
+            <ion-datetime  displayFormat="DD/MMM/YYYY"
+        monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Agos, Sept, Oct, Nov, Dic"
+        doneText="Hecho"
+        cancelText="Cancelar" 
+            [(ngModel)]="fecha_i"></ion-datetime>
+            </ion-item>
+            <ion-item>
+            <ion-label ionic-text color="primary">Fecha Final</ion-label>
+            <ion-datetime displayFormat="DD/MMM/YYYY"
+        monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Agos, Sept, Oct, Nov, Dic"
+        doneText="Hecho"
+        cancelText="Cancelar"
+            [(ngModel)]="fecha_f"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+<ion-row>
+ <button  ion-button block color="secondary" (click)="ver_carreras_entre_fechas()">Buscar Historial</button>
+</ion-row>
+  </ion-grid>
+
+  <!-- list of history records -->
+  <ion-list class="dark-list list-no-border" *ngFor="let carreras of result_fechas_ver">
+    <ion-item class="primary-bg">
+        <ion-grid>
+            <ion-row>
+              <ion-col col-1>
+                <ion-icon name="pin" color="light"></ion-icon>
+              </ion-col>
+               <ion-col col-11>
+                <h4 ion-text  color="light" >{{ carreras.desde }}</h4>
+              </ion-col>
+              
+          </ion-row>
+          <ion-row>
+            <ion-col col-1>
+              <ion-icon name="ios-flag-outline" color="light"></ion-icon>
+            </ion-col>
+              <ion-col col-11>
+              <h4 ion-text  color="light" >{{ carreras.hacia }}</h4>
+            </ion-col>
+          </ion-row>
+           <ion-row>
+            <ion-col col-1>
+            <ion-icon name="ios-clock" color="light"></ion-icon>
+            </ion-col>
+             <ion-col col-11>
+              <h4 ion-text color="light" >Hora Inicio {{ carreras.hora_i }}</h4>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col col-1>
+            <ion-icon name="ios-clock" color="light"></ion-icon>
+            </ion-col>
+              <ion-col col-11>
+              <h4 ion-text color="light" >Hora Fin {{ carreras.hora_f }}</h4>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col col-1 >
+            <ion-icon name="ios-clock" color="light"></ion-icon>
+            </ion-col>
+             <ion-col col-11 >
+              <h4 ion-text color="light" >Tiempo Transcurrido {{ carreras.tiempo_trans }}</h4>
+            </ion-col>
+          </ion-row>
+            <ion-row>
+            <ion-col col-1>
+            <ion-icon name="ios-cash" color="light"></ion-icon>
+            </ion-col>
+            <ion-col col-11>
+              <h4 ion-text color="light" >Monto {{ carreras.monto }}</h4>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div align="center">
+      <h4 ion-text color="light" > Total Carreras: {{suma}} </h4>
+    </div>
+  </ion-toolbar>
+</ion-footer>

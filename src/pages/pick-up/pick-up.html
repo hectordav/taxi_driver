@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar color="primary" >
+    <ion-title>Datos de la Carrera</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="primary-bg">
+  <div class="light-bg padding-xs" padding-top *ngFor="let item of result">
+
+    <ion-list class="list-no-border" margin-top>
+      <ion-item class="round primary-bg" margin-top>
+        <ion-icon name="pin" color="light"  item-left></ion-icon>
+        <div>
+          <h6 ion-text color="light" >{{ item.desde }}</h6>
+        </div>
+      </ion-item>
+      <ion-item class="round primary-bg" margin-top>
+        <ion-icon name="flag" item-left color="light"></ion-icon>
+        <div>
+          <h6 ion-text color="light">{{ item.hasta }}</h6>
+        </div>
+      </ion-item>
+       <a href="tel:{{ item.telf }}">
+      <ion-item class="round primary-bg" margin-top>
+        <ion-icon name="call" color="light"  item-left></ion-icon>
+        <div>
+          <h4 ion-text color="light" >{{ item.nombre }}</h4>
+          <span ion-text color="light" >{{ item.telf }}</span>
+        </div>
+      </ion-item>
+      </a>
+    </ion-list>
+  </div>
+  <ion-grid padding class="bottom-buttons">
+    <ion-row *ngFor="let item of result">
+    <ion-col>
+    <button  ion-button block color="secondary" disabled={{buttonDisabled}} (click)="abrir_mapa_ruta_cliente()">Direccion del cliente en el mapa</button>
+    </ion-col>
+      <ion-col>
+        <button  ion-button block color="secondary" (click)="estoy_aqui(item)">Estoy Aqui</button>
+      </ion-col>
+       <ion-col>
+        <button  ion-button block color="secondary"  (click)="recoger_cliente(item)">Recoger Cliente</button>
+      </ion-col>
+       <!--  <ion-col>
+          <button  ion-button block color="favorite"(click)="mensaje_central()">Enviar mensaje a Central</button>
+      </ion-col> -->
+         <ion-col>
+        <button  ion-button block color="danger"  (click)="cancelar_carrera(item)">Cancelar Carrera</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

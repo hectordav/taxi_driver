@@ -1,0 +1,66 @@
+{
+  "_from": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+  "_id": "uk.co.workingedge.phonegap.plugin.launchnavigator@4.1.3",
+  "_inBundle": false,
+  "_integrity": "sha1-Esdtyny5gmaUo4hMKIWdmach/zU=",
+  "_location": "/uk.co.workingedge.phonegap.plugin.launchnavigator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "name": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "escapedName": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/uk.co.workingedge.phonegap.plugin.launchnavigator/-/uk.co.workingedge.phonegap.plugin.launchnavigator-4.1.3.tgz",
+  "_shasum": "12c76dca7cb9826694a3884c28859d99a721ff35",
+  "_spec": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+  "_where": "C:\\Proyectos_Ionic\\proyecto_taxi\\demo_taxi_driver",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "bugs": {
+    "url": "https://github.com/dpa99c/phonegap-launch-navigator/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8",
+      "windows"
+    ]
+  },
+  "cordova_name": "Launch Navigator",
+  "deprecated": false,
+  "description": "Cordova/Phonegap plugin to navigate to a destination using native navigation apps on Android, iOS, and Windows Phone",
+  "homepage": "https://github.com/dpa99c/phonegap-launch-navigator#readme",
+  "issue": "https://github.com/dpa99c/phonegap-launch-navigator/issues",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "phonegap",
+    "ios",
+    "android",
+    "windows",
+    "wp8",
+    "navigation",
+    "navigator"
+  ],
+  "license": "MIT",
+  "name": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpa99c/phonegap-launch-navigator.git"
+  },
+  "types": "./uk.co.workingedge.phonegap.plugin.launchnavigator.d.ts",
+  "version": "4.1.3"
+}

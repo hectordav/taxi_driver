@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="primary" >
+    <ion-title> <h4 ion-text >Carrera en Proceso</h4></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class=" pick-up primary-bg">
+  <div class="light-bg padding-xs" padding-top *ngFor="let item of result">
+ 
+
+    <ion-list class="list-no-border" margin-top>
+      <ion-item class="round primary-bg" margin-top>
+        <ion-icon name="pin" color="light"  item-left></ion-icon>
+        <div>
+          <h6 ion-text color="light" >{{ item.desde }}</h6>
+        </div>
+      </ion-item>
+    </ion-list>
+   
+      <ion-item class="round primary-bg" margin-top>
+        <ion-icon name="flag" color="light"  item-left></ion-icon>
+        <div>
+          <h6 ion-text color="light" >{{ item.hasta }}</h6>
+        </div>
+      </ion-item>
+    
+  
+      <ion-item class="round primary-bg" margin-top>
+        <ion-icon name="clock" color="light"  item-left></ion-icon>
+        <div>
+          <h6 ion-text color="light" >{{ item.hora_i }}</h6>
+        </div>
+      </ion-item>
+  </div>
+  <div class="bottom-buttons full-width" padding *ngFor="let item of result">
+  <button ion-button block color="secondary" disabled={{buttonDisabled}} (click)="abrir_mapa()">Ruta destino</button>
+     <button  ion-button block color="secondary"  (click)="calcular_distancia_ruta_finalizar_carrera(item)">Finalizar Carrera</button>
+        <!-- <button  ion-button block color="favorite"(click)="mensaje_central()">Enviar mensaje a Central</button> -->
+      <button  ion-button block color="danger"  (click)="cancelar_carrera(item)">A ocurrido un Problema</button>
+  </div>
+   <div id="panel" style="display: none">panel</div>
+</ion-content>

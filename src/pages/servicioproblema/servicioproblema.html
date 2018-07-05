@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary" >
+    <ion-title><h4 ion-text>Cancelar Carrera</h4></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="primary-fondo">
+<ion-list>
+	 <ion-item>	
+	   <ion-label floating><h4 ion-text color="otro_color">Ingrese Su Observacion</h4></ion-label>
+	   <ion-textarea [(ngModel)]="observacion_conductor"></ion-textarea>
+	 </ion-item>
+</ion-list>
+    <button ion-button block color="facebook" (click)="cancelar_carrera()">Cancelar Carrera</button>
+</ion-content>

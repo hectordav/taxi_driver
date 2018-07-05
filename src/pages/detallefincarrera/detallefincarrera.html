@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar color="primary" >
+    <ion-title> <h4 ion-text >Carrera Finalizada</h4></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class=" pick-up primary-bg">
+	  <div class="light-bg padding-xs" padding-top >
+
+	    <ion-badge color="secondary" margin-bottom></ion-badge>
+
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="round primary-bg" margin-top>
+	        <ion-icon name="pin" color="light"  item-left></ion-icon>
+	        <div>
+	          <h6 ion-text color="light" >{{ result.desde }}</h6>
+	        </div>
+	      </ion-item>
+	    </ion-list>
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="round primary-bg" margin-top>
+	        <ion-icon name="flag" color="light"  item-left></ion-icon>
+	        <div>
+	          <h6 ion-text color="light" >{{ result.hasta }}</h6>
+	        </div>
+	      </ion-item>
+	    </ion-list>
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="round primary-bg" margin-top>
+	        <ion-icon name="clock" color="light"  item-left></ion-icon>
+	        <div>
+	          <h6 ion-text color="light" >{{ result.hora_i }}</h6>
+	        </div>
+	      </ion-item>
+	    </ion-list>
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="round primary-bg" margin-top>
+	        <ion-icon name="ios-clock-outline" color="light"  item-left></ion-icon>
+	        <div>
+	          <h6 ion-text color="light" >{{ result.hora_f }}</h6>
+	        </div>
+	      </ion-item>
+	    </ion-list>
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="round primary-bg" margin-top>
+	        <ion-icon name="ios-compass-outline" color="light"  item-left></ion-icon>
+	        <div>
+	          <h6 ion-text color="light" >Distancia: {{ result.distancia }} KM</h6>
+	        </div>
+	      </ion-item>
+	    </ion-list>
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="round primary-bg" margin-top>
+	        <ion-icon name="ios-cash" color="light"  item-left></ion-icon>
+	        <div>
+	          <h6 ion-text color="light" >{{ result.monto }} $</h6>
+	        </div>
+	      </ion-item>
+	    </ion-list>
+	    <ion-list class="list-no-border" margin-top>
+	      <ion-item class="" margin-top>
+	        <ion-label floating><h4 ion-text color="otro_color">Ingrese Su Observaciones</h4></ion-label>
+		   	<ion-textarea [(ngModel)]="observacion_conductor"></ion-textarea>
+	      </ion-item>
+	    </ion-list>
+	  </div>
+	  <div class="bottom-buttons full-width" padding>
+	     <button  ion-button block color="secondary"  (click)="finalizar_carrera()">Finalizar Carrera</button>
+	  </div>
+</ion-content>

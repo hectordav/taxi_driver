@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button  ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="primary-bg">
+  <div padding text-center>
+    <h3 ion-text color="light" >{{ datos_taxi_nombre }}</h3>
+    <h4 ion-text color="gray" >{{ datos_taxi_cedula }}</h4>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <span ion-text color="gray" >Codigo</span>
+          <h4 ion-text color="light" >{{ datos_taxi_id_usuario }}</h4>
+        </ion-col>
+        <ion-col>
+          <span ion-text color="gray">Rating</span>
+          <h4>
+          <ion-icon  name="md-star" color="yellow"  *ngFor="let start of range( puntaje_obtenido )"></ion-icon>
+          <ion-icon name="md-star" color="dark"  *ngFor="let start of range(5- puntaje_obtenido)"></ion-icon>
+          </h4>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <button  ion-button block padding color="gray" >
+      {{ monto_asignado }} MXN$
+    </button>
+  </div>
+  <ion-grid padding class="bottom-buttons">
+    <ion-row>
+        <ion-col>
+        <button  ion-button block color="secondary" disabled={{buttonDisabled}} (click)="buscar_carreras()">Buscar Carreras</button>
+      </ion-col>
+      <!-- <ion-col>
+        <button  ion-button block color="favorite"(click)="mensaje_central()">Enviar mensaje a Central</button>
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
+</ion-content>

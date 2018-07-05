@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary" >
+    <ion-title>Ruta Trazada</ion-title>
+    <ion-buttons start>
+   <button ion-button (click)="regreso_driver()">
+   <ion-icon name="md-arrow-dropleft" class="tamano-icon"></ion-icon>
+   </button>
+   </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <div align="center">
+      <strong>Distancia: {{distancia}}</strong>
+      <div>Tiempo Aprox: {{duracion}}</div>
+    </div>
+  <!-- Show map here -->
+   <div id="map" data-tap-disabled="true"></div>
+
+  <ion-list class="list-no-border">
+ <div id="panel"></div>
+    <ion-item class="tracking-info no-border">
+     <div id="panel2"></div>
+     <ng-template #other_content>
+      <h2>Calculando Ruta Google Maps</h2>
+    </ng-template>
+    </ion-item>
+  </ion-list>
+</ion-content>
